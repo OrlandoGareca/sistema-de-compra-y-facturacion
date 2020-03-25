@@ -73,7 +73,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "app.users.apps.UsersConfig",
-    "app.bases"
+    "app.bases",
+    "app.inv",
     #aqui tenemos que agregar app creadas
 
     # Your stuff: custom apps go here
