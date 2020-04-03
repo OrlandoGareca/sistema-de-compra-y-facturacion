@@ -75,6 +75,8 @@ LOCAL_APPS = [
     #"app.users.apps.UsersConfig",
     "app.bases",
     "app.inv",
+    "app.cmp",
+    "app.fac"
     #aqui tenemos que agregar app creadas
 
     # Your stuff: custom apps go here
@@ -100,7 +102,7 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-url
-LOGIN_URL = "account_login"
+#LOGIN_URL = "account_login"
 
 # PASSWORDS
 # ------------------------------------------------------------------------------

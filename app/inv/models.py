@@ -21,7 +21,7 @@ class SubCategoria(ClaseModelo):
     descripcion = models.CharField(max_length=100,help_text='Descripcion de la Categoria')
 
     def __str__(self):
-        return '{}:{}'.format(self.categoria.description,self.descripcion)
+        return '{}:{}'.format(self.categoria.descripcion,self.descripcion)
 
     def save(self):
         self.descripcion = self.descripcion.upper()
