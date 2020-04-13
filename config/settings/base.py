@@ -63,6 +63,7 @@ DJANGO_APPS = [
     # "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
     "django.forms",
+
 ]
 THIRD_PARTY_APPS = [
     "crispy_forms",
@@ -76,7 +77,10 @@ LOCAL_APPS = [
     "app.bases",
     "app.inv",
     "app.cmp",
-    "app.fac"
+    "app.fac",
+    'django_userforeignkey',
+   'rest_framework',
+    'app.api',
     #aqui tenemos que agregar app creadas
 
     # Your stuff: custom apps go here
@@ -138,6 +142,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django_userforeignkey.middleware.UserForeignKeyMiddleware',
 ]
 
 # STATIC

@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
+from rest_framework import routers, serializers, viewsets
+
 
 urlpatterns = [
     #path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -12,6 +14,8 @@ urlpatterns = [
     path('inv/',include(('inv.urls','inv'),namespace='inv')),
     path('cmp/',include(('cmp.urls','cmp'),namespace='cmp')),
     path('fac/',include(('fac.urls','fac'), namespace='fac')),
+    path('api/',include(('api.urls','api'), namespace='api')),
+
 
 
 

@@ -7,9 +7,9 @@ whitenoise==5.0.1  # https://github.com/evansd/whitenoise
 redis==3.4.1 # https://github.com/andymccurdy/redis-py
 #to report pdf
 xhtml2pdf==0.2.4
-
-
-
+#userforeikey
+django-userforeignkey==0.3.0
+djangorestframework==3.11.0
 # Django
 # ------------------------------------------------------------------------------
 django==2.2.11  # pyup: < 3.0  # https://www.djangoproject.com/
